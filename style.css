@@ -11,6 +11,7 @@
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'arrus_blk_btblack';
+    text-transform: uppercase;
 }
 img{
     display: block;
@@ -165,24 +166,6 @@ p{
     height: 2px;
     width: 15%;
     background: black;
-}
-
-/* form */
-
-.form{
-    padding: 50px 0;
-    width: 65%;
-    margin: auto;
-}
-.form input{
-    background-color: var(--lightGray);
-}
-.form textarea{
-    background-color: var(--lightGray);
-}
-.form h4{
-    font-size: 2rem;
-    font-weight: 500;
 }
 
 /* footer */
