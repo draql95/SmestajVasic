@@ -70,10 +70,6 @@ p{
     font-size: 2.5rem;
 }
 
-.card{
-    padding: 0;
-    
-}
 .card .card-body{
     padding: 20px 30px;
     border: 1px solid var(--primary);
@@ -105,6 +101,7 @@ p{
     font-size: 2.5rem;
     color: var(--accents);
     font-weight: 500;
+    padding-bottom: 30px;
 }
 
 .galerija .owl-carousel{
@@ -197,25 +194,9 @@ footer .lokacija h3{
     margin-bottom: 30px;
 }
 
-/* RESPONSIVE */
 
-@media(max-width: 768px) {
-    .hero .card{
-        flex: 0 0 100%;
-        margin-bottom: 20px;
-    }
-    .hero .dugme{
-        width: 50%;
-    }
-    .form .dugme{
-        width: 50%;
-    }
 
-    footer .kontakt{
-        margin-bottom: 30px;
-    }
-}
-
+/* sobe page */
 .header-sobe{
     height: 60vh;
     background-image: url(img/headerSobe.jpg);
@@ -276,4 +257,52 @@ footer .lokacija h3{
 .inform a i:hover{
     color: #323232;
     transition: var(--transition);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+    .hero h1{
+        font-size: 2rem;
+    }
+    .hero .card{
+        flex: 0 0 70%;
+        margin-bottom: 20px;
+    }
+    .hero .card-body{
+        padding: 10px 15px;
+    }
+    .hero .card-body h4{
+        font-size: 1.2rem;
+    }
+    .hero .card-body p{
+        font-size: 0.8rem;
+    }
+    .hero .card-body .icons{
+        font-size: 1.1rem;
+    }
+
+    .galerija h3{
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+    .galerija .owl-carousel{
+        width: 60%;
+    }
+    .galerija .owl-next, .owl-prev{
+        display: none !important;
+    }
+    .info h4{
+        font-size: 2rem;
+    }
+    .info p{
+        font-size: 0.8rem;
+    }
+    
+    footer .kontakt{
+        margin-bottom: 30px;
+    }
+    footer h3{
+        font-size: 2rem;
+    }
 }
