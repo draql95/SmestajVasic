@@ -301,11 +301,18 @@ footer .lokacija h3{
     .info p{
         font-size: 0.8rem;
     }
+    footer{
+        padding: 30px 0;
+    
+    }
     
     footer .kontakt{
         margin-bottom: 30px;
     }
     footer h3{
         font-size: 2rem;
+    }
+    footer .col-md-6{
+        width: 100%;
     }
 }
