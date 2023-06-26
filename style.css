@@ -1,0 +1,292 @@
+:root {
+    --primary: #f0ceb7;
+    --white: white;
+    --fontSize: 16px;
+    --accents: #222;
+    --red: #d11411;
+    --green: #14696e;
+    --transition: .3s ease-in-out;
+    --lightGray: #e4e4e44b;
+    --brown: #834a15;
+}
+img{
+    display: block;
+}
+p{
+    font-size: 1.2rem;
+}
+
+/* Navbar */
+.navbar{
+    background-color: var(--primary);
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--accents);
+}
+.nav-item{
+    margin-right: 50px;
+}
+.nav-item .nav-link{
+    font-size: 1.2rem;
+}
+.nav-item a:hover{
+    color: var(--green) !important;
+}
+
+
+/* Hero section */
+.hero{
+    padding: 50px 0;
+    background-color: var(--lightGray);
+}
+.hero h1{ 
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(131, 74, 21);
+}
+.hero .card{
+    flex: 0 0 48%;
+}
+.hero h1::after{
+    content: "";
+    margin: 15px auto;
+    display: block;
+    height: 3px;
+    width: 10%;
+    background: var(--brown);
+}
+.hero .row{
+    justify-content: space-around;
+    text-align: center;
+
+}
+.icons{
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.card{
+    padding: 0;
+    
+}
+.card .card-body{
+    padding: 20px 30px;
+    border: 1px solid var(--primary);
+}
+
+.dugme{
+   background: var(--green);
+   display: block;
+   width: 25%;
+   color: var(--white);
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 10px 35px;
+   border-radius: 15px;
+   transition: var(--transition);
+}
+.dugme:hover{
+    color: #222;
+    transition: var(--transition);
+    background-color: var(--primary);
+}
+
+/* Galerija */
+.galerija{
+    background: linear-gradient(180deg, rgba(240,206,183,1) 0%, rgba(240,206,183,1) 39%, rgba(240,180,142,1) 100%); 
+    padding: 50px 0;
+}
+.galerija h3{
+    font-size: 2.5rem;
+    color: var(--accents);
+    font-weight: 500;
+}
+
+.galerija .owl-carousel{
+    width: 70%;
+    margin: auto;
+}
+.galerija .item{
+    width: 85%;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+}
+
+.owl-prev {
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    left: -80px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    right: -30px;
+    display: block !important;
+    border:0px solid black;
+}
+.owl-nav .owl-next span{
+    color: white;
+    font-size: 3rem;
+}
+.owl-nav .owl-prev span{
+    color: white;
+    font-size: 3rem;
+}
+.owl-prev i, .owl-next i {transform : scale(1,6); color: #ccc;}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+    background: none;
+}
+
+
+/* info sekcija */
+.info{
+    background-color: var(--lightGray);
+}
+.info h4{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.info h4::after{
+    content: "";
+    margin: 10px auto;
+    display: block;
+    height: 2px;
+    width: 15%;
+    background: black;
+}
+
+/* form */
+
+.form{
+    padding: 50px 0;
+    width: 65%;
+    margin: auto;
+}
+.form input{
+    background-color: var(--lightGray);
+}
+.form textarea{
+    background-color: var(--lightGray);
+}
+.form h4{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* footer */
+
+footer{
+    padding: 50px 0;
+    background: #323232;
+    color: var(--white);
+}
+
+footer .kontakt h3{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+footer .kontakt ul li {
+    margin-bottom: 10px;
+}
+footer .kontakt .socials a{
+    color: var(--white);
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: var(--transition);
+}
+footer .kontakt .socials a:hover{
+    color: var(--green);
+    transition: var(--transition);
+}
+footer .lokacija h3{
+    margin-bottom: 30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+    .hero .card{
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    .hero .dugme{
+        width: 50%;
+    }
+    .form .dugme{
+        width: 50%;
+    }
+
+    footer .kontakt{
+        margin-bottom: 30px;
+    }
+}
+
+.header-sobe{
+    height: 60vh;
+    background-image: url(img/headerSobe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome{
+    padding-top: 200px;
+}
+.welcome h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--accents);
+}
+
+/* Ponuda soba */
+.sobe{
+    background-color: var(--lightGray);
+    padding: 50px 0;
+}
+.sobe .dugme{
+    width: 50%;
+}
+.sobe .card{
+    flex: 0 0 48%;
+}
+.sobe h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.sobe .card{
+    margin-bottom: 50px;
+}
+.sobe .card h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* kontakt page */
+
+.header-kontakt{
+    height: 60vh;
+    background-image:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 0%), url(img/kontaktHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.inform a i{
+    font-size: 2.5rem;
+    margin-right: 15px;
+    color: var(--green);
+    transition: var(--transition);
+}
+.inform a i:hover{
+    color: #323232;
+    transition: var(--transition);
+}
