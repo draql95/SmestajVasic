@@ -9,10 +9,14 @@
     --lightGray: #e4e4e44b;
     --brown: #834a15;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'arrus_blk_btblack';
+}
 img{
     display: block;
 }
 p{
+    
     font-size: 1.2rem;
 }
 
