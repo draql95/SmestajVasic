@@ -275,20 +275,23 @@ footer .lokacija h3{
     .hero .card-body .icons{
         font-size: 1.1rem;
     }
-
     .galerija h3{
         font-size: 2rem;
         padding-bottom: 20px;
     }
     .galerija .owl-carousel{
         width: 60%;
+        margin: auto;
     }
-    .galerija .owl-next {
+    .galerija .active{
+        margin-right: 0;
+    }
+    /* .galerija .owl-next {
         display: none !important;
     }
     .galerija  .owl-prev{
         display: none !important;
-    }
+    } */
     .info h4{
         font-size: 2rem;
     }
@@ -309,7 +312,7 @@ footer .lokacija h3{
         width: 100%;
     }
     .header-sobe .welcome{
-        padding-top: 40px;
+        padding-top: 100px;
     }
     .header-sobe{
         height: 40vh;
